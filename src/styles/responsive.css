@@ -1,0 +1,60 @@
+/* Base styles */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 576px) {
+  .inner {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .flex-col-mobile {
+    flex-direction: column !important;
+  }
+  
+  .w-full-mobile {
+    width: 100% !important;
+  }
+  
+  .space-y-mobile > * + * {
+    margin-top: 1rem !important;
+  }
+  
+  .p-4-mobile {
+    padding: 1rem !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Responsive images */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive tables */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+} 
